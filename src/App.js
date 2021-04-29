@@ -1,7 +1,6 @@
-import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
-import { GetStarted, Splash } from './pages'
-import Router from './router'
+import React from 'react';
+import Router from './router';
 
 const App = () => {
   return (
