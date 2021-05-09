@@ -1,14 +1,17 @@
 import firebase from 'firebase'
 
-firebase.initializeApp({
-    apiKey: "AIzaSyD0JF0A7IpSbTHf452GRZmmAHL7Qa_aoiU",
-    authDomain: "my-doctor-44944.firebaseapp.com",
-    projectId: "my-doctor-44944",
-    storageBucket: "my-doctor-44944.appspot.com",
-    messagingSenderId: "1093967624681",
-    appId: "1:1093967624681:web:6efa8ff8e25ef4d98b7378"
-  })
+const firebaseConfig ={
+  apiKey: "AIzaSyBBZs4XIvwhJFbEqWfBO_TtZgvnZ2-sL6s",
+  authDomain: "doctor-2-e9bf0.firebaseapp.com",
+  projectId: "doctor-2-e9bf0",
+  storageBucket: "doctor-2-e9bf0.appspot.com",
+  messagingSenderId: "14131460171",
+  appId: "1:14131460171:web:6a3d7c59887f3125ae75ce"
+}
 
-  const Firebase = firebase;
+firebase.initializeApp(firebaseConfig);
 
-  export default Firebase
+
+const Firebase = firebase;
+
+export default Firebase
