@@ -1,5 +1,3 @@
 import Firebase from './Firebase';
 
-export {
-    Firebase
-}
+export {Firebase};

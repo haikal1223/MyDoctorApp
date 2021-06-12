@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { colors } from '../../../utils';
-import { TabItem } from '../../atom';
+import {StyleSheet, View} from 'react-native';
+import {colors} from '../../../utils';
+import {TabItem} from '../../atom';
 
-const BottomNavigator = ({ state, descriptors, navigation }) => {
-    return (
-        <View style={styles.container}>
+const BottomNavigator = ({state, descriptors, navigation}) => {
+  return (
+    <View style={styles.container}>
       {state.routes.map((route, index) => {
-        const { options } = descriptors[route.key];
+        const {options} = descriptors[route.key];
         const label =
           options.tabBarLabel !== undefined
             ? options.tabBarLabel
@@ -37,27 +37,27 @@ const BottomNavigator = ({ state, descriptors, navigation }) => {
         };
 
         return (
-            <TabItem 
-              key={index}
-              title={label} 
-              active={isFocused} 
-              onPress={onPress} 
-              onLongPress={onLongPress} 
-            />
+          <TabItem
+            key={index}
+            title={label}
+            active={isFocused}
+            onPress={onPress}
+            onLongPress={onLongPress}
+          />
         );
       })}
     </View>
-    )
-}
+  );
+};
 
-export default BottomNavigator
+export default BottomNavigator;
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection:'row',
-    justifyContent:'space-between',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     paddingHorizontal: 53,
-    paddingVertical:12,
-    backgroundColor: colors.secondary
-  }
-})
+    paddingVertical: 12,
+    backgroundColor: colors.secondary,
+  },
+});

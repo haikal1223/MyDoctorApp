@@ -1,12 +1,8 @@
-import React from 'react'
-import { View } from 'react-native'
+import React from 'react';
+import {View} from 'react-native';
 
-const Gap = ({height,width}) => {
-    return (
-        <View style={{height: height, width: width}}>
-        </View>
-    )
-}
+const Gap = ({height, width}) => {
+  return <View style={{height: height, width: width}} />;
+};
 
-export default Gap
-
+export default Gap;
